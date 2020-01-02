@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="vara.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="css/button.css" type="text/css">
+  <link rel="stylesheet" href="css/image.css" type="text/css">
+<script>
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     $("p").hide();
+//   });
+// });
+
+$(document).ready(function(){
+
+
+
+  for(let i=1;i<=7;i++){
+    const element =  document.querySelector(`#button${i}`);
+    element.classList.add('animated', 'swing');
+  }
+
+
+  var vara = new Vara("#vara-container",
+  "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+  [{
+    text:"Sudoku App. - Built a Sudoku app and designed an optimal algorithm to rank the difficulties of the game. -Went through the deployment process and launched the app on Google Play Store",
+    duration: 6000
+}]);
+
+  for(let i=1; i<7; i++){
+    $(`#button${i}`).mousedown(function(){
+      if(i==1){
+        var vara1 = new Vara("#vara-container1",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [{
+          text:"Online Chat Room - Personal Project (Express.js, JQuery, Passport.js). - Took initiative to learn express.js and socket.io to build REST API for online chat system. - Used MongoDB to read and write the user information. -Built the UI and triggered the events with pug and JQueryLearned Passport.js to implemented authentication mechanism ",
+          duration: 7000
+        }]);
+      }
+
+      if(i==2){
+        var vara2 = new Vara("#vara-container2",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [{
+          text:"Foodeo App  - Co-owner of Yumicci  (React Native, Redux, Firebase). - Designed the UI and functions for a food ordering app with a team. - Added the business logic and managed the states with Redux in the React Native frontend and self learned Firebase for the backend ",
+          duration: 6000
+        }]);
+      }
+
+      if(i==3){
+        var vara3 = new Vara("#vara-container3",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [{
+          text:"JIGRA  - Personal Project in a team (Meteor.js, MongoDB). - Designed and set up a task management system project for the non-tech related enterprises. - Set up APIs and React front end with Meteor.js and stored the user information in MongoDB. -Experimented the functional programming principles by reducing the usage of states and using more higher order functions and routers instead",
+          duration: 7500
+        }]);
+      }
+
+      if(i==4){
+        var vara4 = new Vara("#vara-container4",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [{
+          text:"Mckesson Imaging Medical. - Developed and maintained the company product and added features with C++ and python. -Implemented the features including the filter function for the machine learning side project with C# and wrote automation scripts and website scrapers with Python. -Volunteered for the Advanced Mouse Project to build a driver for multi-button Logitech Mouse and validated the functions by integrating it with the main company product ",
+          duration: 8000
+        }]);
+      }
+
+      if(i==5){
+        var vara5 = new Vara("#vara-container5",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [{
+          text:"Hootsuite. - Worked as a full stack developer by developing React Dashboard Composer and Scala micro services running on Kubernetes. -Improved the latency of the message publishing micro service by 85 percent and implemented the core features including the field validations on the Hootsuite main product. -Participated in the design meeting to shape the architecture for the single message service and facilitated the meeting of the round table discussion",
+          duration: 8000
+        }]);
+      }
+
+      if(i==6){
+        var vara6 = new Vara("#vara-container6",
+        "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+        [{
+          text:"still growing.."
+        }]);
+      }
+
+      $(`#div${i}`).fadeOut();
+      $(`#div${i+1}`).fadeIn();
+      $(`#button${i}`).hide();
+      $(`#button${i+1}`).css("display","block");
+    });
+  }
+
+
+  // var vara1 = new Vara("#vara-container1",
+  // "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json",
+  // [{
+  //   text:"Hello World!!sdsdsdsdsdsdsdss sdsds"
+  // }]);
+
+
+  // $("#button1").click(function () {
+  //   var imgUrl = $(this).data('rel');
+  //   $("#div1").fadeOut();
+  //   // $("#div1").html("<img src='" + imgUrl + "' alt='description' />").fadein();
+  //   $("#div2").fadeIn();
+  //   $("#button1").hide();
+  //   $("#button2").css("display","block");
+  // });
+
+
+});
+
+
+</script>
+</head>
+<body>
+
+  <div id="div1" class="middle" >
+    <div style="display:flex">
+      <img id = "img" src="img/images/IMG_4798.JPG" >
+      <div id="vara-container" style="padding-top: 20%;"></div>
+    </div>
+  </div>
+
+  <div id="div2" class="middle" style="display:none">
+    <div style="display:flex">
+      <img id = "img" src="img/images/IMG_4799.JPG" >
+      <div id="vara-container1" style="padding-top: 20%;"></div>
+    </div>
+  </div>
+
+  <div id="div3" class="middle" style="display:none">
+    <div style="display:flex">
+    <img id = "img" src="img/images/IMG_4801.JPG" alt="one" >
+    <div id="vara-container2" style="padding-top: 20%;"></div>
+  </div>
+  </div>
+
+  <div id="div4" class="middle" style="display:none">
+    <div style="display:flex">
+    <img id = "img" src="img/images/IMG_4802.JPG" alt="one" >
+    <div id="vara-container3" style="padding-top: 20%;"></div>
+  </div>
+  </div>
+
+  <div id="div5" class="middle" style="display:none">
+    <div style="display:flex">
+    <img id = "img" src="img/images/IMG_4803.JPG" alt="one" >
+    <div id="vara-container4" style="padding-top: 20%;"></div>
+  </div>
+  </div>
+
+  <div id="div6" class="middle" style="display:none">
+    <div style="display:flex">
+    <img id = "img" src="img/images/IMG_4804.JPG" alt="one" >
+    <div id="vara-container5" style="padding-top: 20%;"></div>
+  </div>
+  </div>
+
+  <div id="div7" class="middle" style="display:none">
+    <div style="display:flex">
+    <img id = "img" src="img/images/IMG_4805.JPG" alt="one" >
+    <div id="vara-container6" style="padding-top: 20%;"></div>
+  </div>
+  </div>
+
+  <!-- <div id="vara-container"></div> -->
+
+
+  <input type="image" width="100px" height="100px" id="button1" class="bottom-middle" src="img/bottle.jpg" />
+  <input type="image" width="100px" height="100px" id="button2" class="bottom-middle" src="img/bottle.jpg" />
+  <input type="image" width="100px" height="100px" id="button3" class="bottom-middle" src="img/bottle.jpg" />
+  <input type="image" width="100px" height="100px" id="button4" class="bottom-middle" src="img/bottle.jpg" />
+  <input type="image" width="100px" height="100px" id="button5" class="bottom-middle" src="img/bottle.jpg" />
+  <input type="image" width="100px" height="100px" id="button6" class="bottom-middle" src="img/bottle.jpg" />
+  <input type="image" width="100px" height="100px" id="button7" class="bottom-middle" src="img/bottle.jpg" />
+
+
+
+<!-- <button>Click me</button> -->
+<script src="https://cdn.jsdelivr.net/gh/akzhy/vara@master/src/vara.min.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.bottom-middle{
+  margin-left: 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#button2{
+  display: none;
+}
+
+#button3{
+  display: none
+}
+
+#button4{
+  display: none
+}
+
+#button5{
+  display: none
+}
+
+#button6{
+  display: none
+}
+
+#button7{
+  display: none
+}
